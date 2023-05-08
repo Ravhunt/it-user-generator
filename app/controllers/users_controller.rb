@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def index
     @user = User.new
-	end
+  end
 
 	def create
     @user = User.new(user_params)
