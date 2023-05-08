@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-	def create
+  def create
     @user = User.new(user_params)
 
     if @user.save
@@ -15,11 +15,11 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-	end
+  end
 
-	private
+  private
 
-	def user_params
+  def user_params
     params.require(:user).permit(:first_name, :last_name)
   end
 end
