@@ -1,0 +1,67 @@
+/* First Page */
+
+.modern-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: "Your Modern Font", monospace;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Your Modern Font", monospace;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  font-family: "Your Modern Font", monospace;
+}
+
+.input-wrapper {
+  display: inline-block;
+  text-align: left;
+}
+
+.input-wrapper input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-family: "Your Modern Font", monospace;
+}
+
+.form-group input[type="submit"] {
+  padding: 10px 20px;
+  font-family: "Your Modern Font", monospace;
+}
+
+.output-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 5px;
+  font-family: "Your Modern Font", monospace;
+}
+
+.user-data-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.user-data-list li {
+  display: flex;
+  align-items: left;
+  margin-bottom: 10px;
+}
+
+.data-label {
+  flex-basis: 120px;
+  font-weight: bold;
+}
+
+.data-value {
+  flex-grow: 1;
+}
+
