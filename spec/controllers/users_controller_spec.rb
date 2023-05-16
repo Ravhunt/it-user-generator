@@ -26,7 +26,7 @@ RSpec.describe UsersController, type: :controller do
       user = User.last
       password = user.password
 
-      expect(password.length).to eq(9) # 3 lowercase letters + 3 digits + 3 uppercase letters
+      expect(password.length).to eq(9)
       expect(password).to match(/^[a-z]{3}[0-9]{3}[A-Z]{3}$/)
     end
 
@@ -37,8 +37,5 @@ RSpec.describe UsersController, type: :controller do
 
       expect(user.username).to eq(expected_username)
     end
-
-
-    
   end
 end

@@ -19,19 +19,18 @@ class User < ApplicationRecord
 
   def username
     first_initial = first_name[0].downcase
-    last_name_normalized = last_name.downcase.gsub(/\s+/, '') # Remove any whitespace from last_name
+    last_name_normalized = last_name.downcase.gsub(/\s+/, '')
 
     "#{first_initial}#{last_name_normalized}"
   end
 
   def email
     first_initial = first_name[0].capitalize
-    last_name_normalized = last_name.downcase.gsub(/\s+/, '') # Remove any whitespace from last_name
+    last_name_normalized = last_name.downcase.gsub(/\s+/, '')
     domain = "@tbrown.com"
 
     "#{first_name.capitalize}.#{last_name.capitalize}#{domain}"
   end
-
 
 private
 
