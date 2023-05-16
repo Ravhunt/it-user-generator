@@ -1,5 +1,25 @@
-<h1>Show user here</h1>
-<ul>
-  <li>First Name: <%= @user.first_name %></li>
-  <li>Last Name: <%= @user.last_name %></li>
-</ul>
+<div class="output-container">
+  <h1>New User Data</h1>
+  <ul class="user-data-list">
+    <li>
+      <span class="data-label">First Name:</span>
+      <span class="data-value"><%= @user.first_name %></span>
+    </li>
+    <li>
+      <span class="data-label">Last Name:</span>
+      <span class="data-value"><%= @user.last_name %></span>
+    </li>
+    <li>
+      <span class="data-label">Password:</span>
+      <span class="data-value"><%= @user.password %></span>
+    </li>
+    <li>
+      <span class="data-label">Username:</span>
+      <span class="data-value"><%= @user.username %></span>
+    </li>
+    <li>
+      <span class="data-label">Email:</span>
+      <span class="data-value"><%= @user.email %></span>
+    </li>
+  </ul>
+</div>
